@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using ProjectManager.Models;
+using Microsoft.Owin.Security.Facebook;
+using System.Collections.Generic;
 
 namespace ProjectManager
 {
@@ -54,15 +56,33 @@ namespace ProjectManager
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            List<string> Social = new List<string>() { "email" };
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            var FbFriends = new FacebookAuthenticationOptions();
+
+            FbFriends.Scope.Add("email");
+            FbFriends.AppId = "1456817657967126";
+            FbFriends.AppSecret = "55442c8994d763693cc990a3663da735";
+
+            FbFriends.Provider = new FacebookAuthenticationProvider()
+            {
+                OnAuthenticated = async FbContext =>
+                {
+
+                    FbContext.Identity.AddClaim(
+                    new System.Security.Claims.Claim("FacebookAccessToken", FbContext.AccessToken));
+
+                }
+            };
+
+            FbFriends.SignInAsAuthenticationType = DefaultAuthenticationTypes.ExternalCookie;
+            app.UseFacebookAuthentication(FbFriends);  
+
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "100751404935-66jpa36cvssr4drfh1skktrfc9l76flr.apps.googleusercontent.com",
+                ClientSecret = "e5VP9_bjqxJt6YjYoLsjwrLb"
+            });
         }
     }
 }
