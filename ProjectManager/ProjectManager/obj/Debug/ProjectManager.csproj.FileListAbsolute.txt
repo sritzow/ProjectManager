@@ -110,3 +110,4 @@ C:\Users\bbrown_h\Dropbox\inConcert\ProjectManager\ProjectManager\ProjectManager
 C:\Users\bbrown_h\Dropbox\inConcert\ProjectManager\ProjectManager\ProjectManager\bin\System.Web.Optimization.xml
 C:\Users\bbrown_h\Dropbox\inConcert\ProjectManager\ProjectManager\ProjectManager\obj\Debug\ProjectManager.dll
 C:\Users\bbrown_h\Dropbox\inConcert\ProjectManager\ProjectManager\ProjectManager\obj\Debug\ProjectManager.pdb
+C:\Users\mgalang_h\Dropbox\Projects\inConcert\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csprojResolveAssemblyReference.cache
