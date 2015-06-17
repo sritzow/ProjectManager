@@ -43,10 +43,10 @@ namespace ProjectManager.Models
         public string description { get; set; }
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
-        public List<Task> tasks { get; set; }
+        public List<Tasks> tasks { get; set; }
     }
 
-    public class Task
+    public class Tasks
     {
         public int id { get; set; }
         public int milestoneId { get; set; }

@@ -4,10 +4,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
-using Owin;
 using ProjectManager.Models;
 using Microsoft.Owin.Security.Facebook;
 using System.Collections.Generic;
+using Owin;
 
 namespace ProjectManager
 {
