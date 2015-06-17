@@ -7,7 +7,7 @@ namespace ProjectManager.Models
 {
     public class ProjectViewModel
     {
-
+        
     }
 
     public class Project
@@ -15,6 +15,8 @@ namespace ProjectManager.Models
         public int id { get; set; }
         public int name { get; set; }
         public int description { get; set; }
+        public List<ProjectAuth> auths { get; set; }
+        public List<Calendar> calendars { get; set; }
     }
 
     public class ProjectAuth
@@ -29,6 +31,8 @@ namespace ProjectManager.Models
         public int id { get; set; }
         public int projectId { get; set; }
         public string name { get; set; }
+        public List<Event> events { get; set; }
+        public List<Milestone> milestones { get; set; }
     }
 
     public class Milestone
@@ -39,6 +43,7 @@ namespace ProjectManager.Models
         public string description { get; set; }
         public DateTime startDate { get; set; }
         public DateTime endDate { get; set; }
+        public List<Task> tasks { get; set; }
     }
 
     public class Task
@@ -48,6 +53,7 @@ namespace ProjectManager.Models
         public string name { get; set; }
         public string description { get; set; }
         public int hours { get; set; }
+        public List<TaskUser> taskUsers { get; set; }
     }
 
     public class TaskUser
