@@ -112,6 +112,9 @@ C:\Users\mgalang_h\Dropbox\Projects\inConcert\ProjectManager\ProjectManager\obj\
 C:\Users\bbrown_h\Dropbox\inConcert\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csprojResolveAssemblyReference.cache
 C:\Users\bbrown_h\Dropbox\inConcert\ProjectManager\ProjectManager\obj\Debug\ProjectManager.Properties.Resources.resources
 C:\Users\bbrown_h\Dropbox\inConcert\ProjectManager\ProjectManager\obj\Debug\ProjectManager.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\sritzow_h\Dropbox\_LapOps\coursework\ProjectManager\ProjectManager\ProjectManager\bin\Matrix.dll
 C:\Users\sritzow_h\Dropbox\_LapOps\coursework\ProjectManager\ProjectManager\ProjectManager\bin\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\sritzow_h\Dropbox\_LapOps\coursework\ProjectManager\ProjectManager\ProjectManager\bin\Matrix.xml
+=======
+>>>>>>> fd9a75389bd16a1215c095018fab9b8f34913d80
